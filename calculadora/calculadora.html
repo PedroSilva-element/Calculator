@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style/calc.css">
+    <script src="script/calc.js" defer></script>
+</head>
+
+<body>
+    <div id="interface">
+
+        <table>
+            <tr>
+                <th colspan="4">
+                    <p id="dados"></p>
+                    <p id="result"></p>
+                </th>
+            </tr>
+            <tr>
+                <td onclick="clean()">C</td>
+                <td onclick="insert('(')">&#8333;</td>
+                <td onclick="back()">&#9166;</td>
+                <td onclick="insert('/')" class="operation">&divide;</td>
+            </tr>
+            <tr>
+                <td onclick="insert(7)">7</td>
+                <td onclick="insert(8)">8</td>
+                <td onclick="insert(9)">9</td>
+                <td onclick="insert('*')" class="operation">&times;</td>
+            </tr>
+            <tr>
+                <td onclick="insert(4)">4</td>
+                <td onclick="insert(5)">5</td>
+                <td onclick="insert(6)">6</td>
+                <td onclick="insert('-')" class="operation">&minus;</td>
+            </tr>
+            <tr>
+                <td onclick="insert(1)">1</td>
+                <td onclick="insert(2)">2</td>
+                <td onclick="insert(3)">3</td>
+                <td onclick="insert('+')" class="operation">&#8330;</td>
+            </tr>
+            <tr>
+                <td onclick="insert(0)">0</td>
+                <td onclick="insert('.')">.</td>
+                <td onclick="calculo()" colspan="2" class="operation">&#8332;</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
